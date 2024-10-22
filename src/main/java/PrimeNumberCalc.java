@@ -16,7 +16,7 @@ public class PrimeNumberCalc {
                 calculateSumOfPrimeNumbers(i);
             }
         }
-        System.out.println(sum);
+        showResult(sum,amountOfPrimeNumbers,range);
         return amountOfPrimeNumbers;
     }
     public void calculateSumOfPrimeNumbers(int primeNumber){
@@ -31,7 +31,7 @@ public class PrimeNumberCalc {
                 return false;
             }
         }
-        System.out.println(number);
+        //**/System.out.println(number);
         return true;
     }
 
@@ -53,6 +53,11 @@ public class PrimeNumberCalc {
             return false;
         }
         return true;
+    }
+    public void showResult(int sum, int amountOfPrimeNumbers, int range){
+        System.out.println("Hej, det finns " + amountOfPrimeNumbers + " primtal mellan 0 och "
+                + range);
+        System.out.println("Och den totala summan av dessa primtal är " + sum);
     }
 
 

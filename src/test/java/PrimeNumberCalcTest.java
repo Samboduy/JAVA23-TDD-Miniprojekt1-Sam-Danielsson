@@ -36,7 +36,7 @@ public class PrimeNumberCalcTest {
         assertEquals(isPrime,true);
     }
     @Test
-    @DisplayName("Chekc if a number is a primenumber")
+    @DisplayName("Chekc negative numbers")
     public void testCheckNegativeNumber() {
         PrimeNumberCalc calc = new PrimeNumberCalc();
         boolean isPrime = calc.isPrimeNumber(-5);
